@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Confirmar pago</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header class="header">
+       <a href="#" class="logo">C360</a>
+       <nav class="nav">
+           <ul class="menu">
+               <li><a href="bienvenida.php">Inicio</a></li>
+               <li><a href="productos.php">Cátalogo de productos</a></li>
+               <li><a href="carrito.php">Carrito</a></li>
+               <li><a href="cerrar_sesion.php">Cerrar sesión</a></li>
+           </ul>
+       </nav>
+   </header>
+   <form action="procesar_pago.php" method="post">
+       <label for="tarjeta">Número de tarjeta:</label>
+       <input type="text" id="tarjeta" name="tarjeta" required pattern="[0-9]{16}">
+       <label for="cvv">CVV:</label>
+       <input type="text" id="cvv" name="cvv" required pattern="[0-9]{3}">
+       <a href="pago_realizado.html">
+           <input type="submit" value="Confirmar compra">
+       </a>
+   </form>
+</body>
+</html>

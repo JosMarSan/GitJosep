@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">C360</a>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inicio.html">Inicio de sesión</a></li>
+                <li><a href="resgistrar.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+                <h1>¿Ya estás registrado?</h1>
+                <p>Inicia sesión ahora para aprovecharte de todos los beneficios de la cuenta de cliente de C360. ¿Nuevo cliente?<a href="resgistrar.html">Al resgistro</a></p>
+        </article>
+
+        <section id="login">
+            <form  method="post" action="procesar_login.php">
+              <label for="correo">Usuario:</label>
+              <input type="email" placeholder="Correo electrónico" id="correo" name="correo" required>
+        
+              <label for="contrasena">Contraseña:</label>
+              <input type="password" id="contrasena" name="contrasena" required>
+        
+              <input type="submit" value="Iniciar Sesión">
+            </form>
+          </section>
+    </main>
+</body>
+</html>
